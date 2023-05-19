@@ -119,7 +119,7 @@ public class Room {
     }
 
     public void delete(int numbRoom){
-        List<String> lines = read("caseModule2\\data\\room.csv");
+        List<String> lines = read("data\\room.csv");
         List<Room> rooms = new ArrayList<>();
 
         for (String line:lines) {
@@ -128,7 +128,7 @@ public class Room {
                 rooms.add(room);
             }
         }
-        write("caseModule2\\data\\room.csv" , rooms);
+        write("data\\room.csv" , rooms);
 
         for (Room room: listOfRoom.findAll()) {
             if (room.getNumbRoom() == numbRoom){

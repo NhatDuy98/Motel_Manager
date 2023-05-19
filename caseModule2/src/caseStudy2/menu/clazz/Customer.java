@@ -124,7 +124,7 @@ public class Customer {
 
 
     public void deleteInfo(int roomNumb) {
-        List<String> lines = read("caseModule2\\data\\customer.csv");
+        List<String> lines = read("data\\customer.csv");
         List<Customer> customers = new ArrayList<>();
 
         for (String line : lines) {
@@ -133,7 +133,7 @@ public class Customer {
                 customers.add(customer);
             }
         }
-        write("caseModule2\\data\\customer.csv", customers);
+        write("data\\customer.csv", customers);
 
         List<Motel> motels = listOfMotel.findAll();
         for (Motel motel : motels) {

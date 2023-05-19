@@ -25,29 +25,50 @@ public class DisplayRoom {
                 "Tổng bill",
                 "Tiền chưa thanh toán");
 
-        for (Motel motel : listOfMotel.findAll()) {
-            boolean hasCustomer = false;
-            for (Customer customer : listOfCustomer.findAll()) {
-                if (customer.getRoomNumb() == motel.getRoomNumb() && !customer.isStatus()) {
-                    System.out.println(motel.getRoomNumb() + ": Chưa thêm thông tin");
-                    hasCustomer = true;
-                    break;
-                }
-                for (Room room : listOfRoom.findAll()) {
-                    if (motel.getRoomNumb() == room.getNumbRoom()) {
-                        System.out.printf("%-15s %-15s %-20s %-15s %-15s\n",
-                                motel.getRoomNumb(),
-                                room.getNumbPersonLive(),
-                                room.getNumbElectricUse(),
-                                room.getBillRoom(),
-                                customer.getTemp());
-                        motel.setStatus(true);
+        for (Motel motel:listOfMotel.findAll()) {
+            for (Customer customer:listOfCustomer.findAll()) {
+                if (customer.getRoomNumb() == motel.getRoomNumb()){
+                    for (Room room:listOfRoom.findAll()) {
+                        if (room.getNumbRoom() == customer.getRoomNumb()){
+                            System.out.printf("%-15s %-15s %-20s %-15s %-15s\n",
+                                    motel.getRoomNumb(),
+                                    room.getNumbPersonLive(),
+                                    room.getNumbElectricUse(),
+                                    room.getBillRoom(),
+                                    customer.getTemp());
+                            motel.setStatus(true);
+                        }
                     }
                 }
             }
-            if (!motel.isStatus() && !hasCustomer) {
+            if (!motel.isStatus()) {
                 System.out.println(motel.getRoomNumb() + ": Trống");
             }
         }
+
+//        for (Motel motel : listOfMotel.findAll()) {
+//            boolean hasCustomer = false;
+//            for (Customer customer : listOfCustomer.findAll()) {
+//                if (customer.getRoomNumb() == motel.getRoomNumb() && !customer.isStatus()) {
+//                    System.out.println(motel.getRoomNumb() + ": Chưa thêm thông tin");
+//                    hasCustomer = true;
+//                    break;
+//                }
+//                for (Room room : listOfRoom.findAll()) {
+//                    if (motel.getRoomNumb() == room.getNumbRoom()) {
+//                        System.out.printf("%-15s %-15s %-20s %-15s %-15s\n",
+//                                motel.getRoomNumb(),
+//                                room.getNumbPersonLive(),
+//                                room.getNumbElectricUse(),
+//                                room.getBillRoom(),
+//                                customer.getTemp());
+//                        motel.setStatus(true);
+//                    }
+//                }
+//            }
+//            if (!motel.isStatus() && !hasCustomer) {
+//                System.out.println(motel.getRoomNumb() + ": Trống");
+//            }
+//        }
     }
 }

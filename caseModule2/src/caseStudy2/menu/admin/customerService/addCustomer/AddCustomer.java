@@ -113,7 +113,7 @@ public class AddCustomer {
 
                 Customer newCustomer = new Customer(name, age, address, phoneNumber, dob, cccd, numbRoom,0);
                 listOfCustomer.add(newCustomer);
-
+                break;
             }
         }
         if (!checkMotel){
@@ -127,11 +127,13 @@ public class AddCustomer {
         for (Motel motel : listOfMotel.findAll()) {
             if (motel.getRoomNumb() == numbRoom) {
                 motel.setStatus(true);
+                break;
             }
         }
         for (Customer customer:listOfCustomer.findAll()) {
             if (customer.getRoomNumb() == numbRoom){
                 customer.setStatus(true);
+                break;
             }
         }
     }
