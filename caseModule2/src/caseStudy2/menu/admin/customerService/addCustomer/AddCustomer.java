@@ -97,10 +97,12 @@ public class AddCustomer {
         System.out.println("Nhập thông tin người thuê");
         System.out.println("----------------------------------------------");
         int numbRoom = scanner.nextInt();
+        boolean checkMotel = false;
         System.out.println("----------------------------------------------");
 
         for (Motel motel:listOfMotel.findAll()) {
             if (motel.getRoomNumb() == numbRoom){
+                checkMotel = true;
                 String name = inputName();
                 String age = inputAge();
                 String address = inputAddress();
@@ -113,11 +115,11 @@ public class AddCustomer {
                 listOfCustomer.add(newCustomer);
 
             }
-            else {
-                System.out.println("Số phòng từ 101 - 110");
-                System.out.println("----------------------------------------------");
-                return;
-            }
+        }
+        if (!checkMotel){
+            System.out.println("Số phòng từ 101 - 110");
+            System.out.println("----------------------------------------------");
+            return;
         }
 
         System.out.println("Bạn đã thêm thông tin thành công");

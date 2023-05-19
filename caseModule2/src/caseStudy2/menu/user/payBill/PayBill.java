@@ -74,7 +74,7 @@ public class PayBill {
                             checkMoney = true;
                             int temp = customer.getTemp() - money;
 
-                            List<String> lines = read("data\\customer.csv");
+                            List<String> lines = read("caseModule2\\data\\customer.csv");
                             List<Customer> newCustomers = new ArrayList<>();
                             for (String line:lines) {
                                 Customer newInfoCustomer = Customer.parseCustomer(line);
@@ -83,7 +83,7 @@ public class PayBill {
                                 }
                                 newCustomers.add(newInfoCustomer);
                             }
-                            write("data\\customer.csv", newCustomers);
+                            write("caseModule2\\data\\customer.csv", newCustomers);
                             System.out.println("Bạn đã thanh toán thành công");
                             System.out.println("----------------------------------------------");
                         }
@@ -98,7 +98,7 @@ public class PayBill {
                     String formattedDateTime = currentLocalDateTime.format(dateTimeFormatter);
                     String str= numbRoom + "," + money + "," + "Chuyển khoản"  + "," + formattedDateTime + "\n"  ;
                     listOfHistory.add(str);
-                    write("data\\history.csv",listOfHistory.findAll());
+                    write("caseModule2\\data\\history.csv",listOfHistory.findAll());
                     isRunning = false;
                     break;
                 case 9:

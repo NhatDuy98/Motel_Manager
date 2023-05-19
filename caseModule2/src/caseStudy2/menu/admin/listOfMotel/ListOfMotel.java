@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListOfMotel {
-    private static final String path = "data\\motel.csv";
+    private static final String path = "caseModule2\\data\\motel.csv";
     private final int capacityRoom = 10;
 
     public List<Motel> findAll() {

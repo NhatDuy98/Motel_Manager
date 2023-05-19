@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class ListOfCustomer {
-    private static final String path = "data\\customer.csv";
+    private static final String path = "caseModule2\\data\\customer.csv";
 
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();

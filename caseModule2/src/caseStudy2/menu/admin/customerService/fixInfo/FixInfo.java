@@ -100,7 +100,7 @@ public class FixInfo {
         }
         if (customers.isEmpty()) {
             // Nếu danh sách rỗng xóa hết toàn bộ nội dung file
-            write("data\\customer.csv", Collections.emptyList());
+            write("caseModule2\\data\\customer.csv", Collections.emptyList());
         }
     }
 
@@ -218,7 +218,7 @@ public class FixInfo {
                                     }
                                     newCustomer.add(newInfoCustomer);
                                 }
-                                write("data\\customer.csv", newCustomer);
+                                write("caseModule2\\data\\customer.csv", newCustomer);
                             } while (isRunning);
                             return;
                         }

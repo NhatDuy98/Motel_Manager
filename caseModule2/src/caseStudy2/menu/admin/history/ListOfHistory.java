@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListOfHistory {
-    private final String path = "data\\history.csv";
+    private final String path = "caseModule2\\data\\history.csv";
 
     public List<String> findAll(){
         List<String> historis = new ArrayList<>();

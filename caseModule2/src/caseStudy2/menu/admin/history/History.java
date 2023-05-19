@@ -6,7 +6,7 @@ public class History {
     private ListOfHistory listOfHistory = new ListOfHistory();
     public History(){}
     public void running(){
-        ReadWrite.read("data\\history.csv");
+        ReadWrite.read("caseModule2\\data\\history.csv");
 
         System.out.println("LỊCH SỬ GIAO DỊCH");
         System.out.println("----------------------------------------------");
