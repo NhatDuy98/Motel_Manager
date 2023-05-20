@@ -2,8 +2,8 @@ package caseStudy2.menu.admin.roomService.fixRoom;
 
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
 import caseStudy2.menu.admin.roomService.listOfRoom.ListOfRoom;
-import caseStudy2.menu.clazz.Motel;
-import caseStudy2.menu.clazz.Room;
+import caseStudy2.menu.model.Motel;
+import caseStudy2.menu.model.Room;
 
 import java.util.ArrayList;
 import java.util.List;

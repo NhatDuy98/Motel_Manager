@@ -4,9 +4,9 @@ import caseStudy2.menu.admin.customerService.listOfCustomer.ListOfCustomer;
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
 import caseStudy2.menu.admin.roomService.displayRoom.DisplayRoom;
 import caseStudy2.menu.admin.roomService.listOfRoom.ListOfRoom;
-import caseStudy2.menu.clazz.Customer;
-import caseStudy2.menu.clazz.Motel;
-import caseStudy2.menu.clazz.Room;
+import caseStudy2.menu.model.Customer;
+import caseStudy2.menu.model.Motel;
+import caseStudy2.menu.model.Room;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,7 +69,7 @@ public class CalculateBill {
                     if (room.getNumbRoom() == numbRoom) {
                         int temp = room.getBillRoom();
                         for (Customer customer : listOfCustomer.findAll()) {
-                            if (customer.getRoomNumb() == numbRoom) {
+                            if (customer.getRoomNumb() == room.getNumbRoom()) {
                                 int temp1 = temp + customer.getTemp();
                                 List<String> lines = read("data\\customer.csv");
                                 List<Customer> newCustomer = new ArrayList<>();

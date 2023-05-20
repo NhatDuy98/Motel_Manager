@@ -1,4 +1,4 @@
-package caseStudy2.menu.clazz;
+package caseStudy2.menu.model;
 
 
 public class Motel {

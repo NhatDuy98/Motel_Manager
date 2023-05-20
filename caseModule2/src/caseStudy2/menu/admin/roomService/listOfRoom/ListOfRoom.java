@@ -1,6 +1,6 @@
 package caseStudy2.menu.admin.roomService.listOfRoom;
 
-import caseStudy2.menu.clazz.Room;
+import caseStudy2.menu.model.Room;
 import caseStudy2.menu.format.ReadWrite;
 
 import java.util.ArrayList;

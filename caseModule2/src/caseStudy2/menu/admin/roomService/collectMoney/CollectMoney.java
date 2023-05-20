@@ -5,8 +5,8 @@ import caseStudy2.menu.admin.history.ListOfHistory;
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
 import caseStudy2.menu.admin.roomService.displayRoom.DisplayRoom;
 import caseStudy2.menu.admin.roomService.listOfRoom.ListOfRoom;
-import caseStudy2.menu.clazz.Customer;
-import caseStudy2.menu.clazz.Motel;
+import caseStudy2.menu.model.Customer;
+import caseStudy2.menu.model.Motel;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

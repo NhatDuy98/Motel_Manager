@@ -2,8 +2,8 @@ package caseStudy2.menu.admin.displayCustomer;
 
 import caseStudy2.menu.admin.customerService.listOfCustomer.ListOfCustomer;
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
-import caseStudy2.menu.clazz.Customer;
-import caseStudy2.menu.clazz.Motel;
+import caseStudy2.menu.model.Customer;
+import caseStudy2.menu.model.Motel;
 
 public class DisplayCustomer {
     private ListOfMotel listOfMotel = new ListOfMotel();

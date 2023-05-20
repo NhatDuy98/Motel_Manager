@@ -5,9 +5,9 @@ import caseStudy2.menu.admin.customerService.listOfCustomer.ListOfCustomer;
 import caseStudy2.menu.admin.displayCustomer.DisplayCustomer;
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
 import caseStudy2.menu.admin.roomService.listOfRoom.ListOfRoom;
-import caseStudy2.menu.clazz.Customer;
-import caseStudy2.menu.clazz.Motel;
-import caseStudy2.menu.clazz.Room;
+import caseStudy2.menu.model.Customer;
+import caseStudy2.menu.model.Motel;
+import caseStudy2.menu.model.Room;
 
 
 import java.util.ArrayList;

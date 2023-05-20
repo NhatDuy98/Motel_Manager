@@ -5,9 +5,9 @@ import caseStudy2.menu.admin.displayCustomer.DisplayCustomer;
 import caseStudy2.menu.format.FormatForm;
 import caseStudy2.menu.admin.customerService.listOfCustomer.ListOfCustomer;
 import caseStudy2.menu.admin.listOfMotel.ListOfMotel;
-import caseStudy2.menu.clazz.Customer;
+import caseStudy2.menu.model.Customer;
 import caseStudy2.menu.format.RetryInput;
-import caseStudy2.menu.clazz.Motel;
+import caseStudy2.menu.model.Motel;
 
 import static caseStudy2.Run.scanner;
 

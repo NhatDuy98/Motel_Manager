@@ -1,6 +1,6 @@
 package caseStudy2.menu.admin.customerService.listOfCustomer;
 
-import caseStudy2.menu.clazz.Customer;
+import caseStudy2.menu.model.Customer;
 import caseStudy2.menu.format.ReadWrite;
 
 import java.util.ArrayList;

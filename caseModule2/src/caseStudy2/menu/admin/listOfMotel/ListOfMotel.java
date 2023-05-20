@@ -1,6 +1,6 @@
 package caseStudy2.menu.admin.listOfMotel;
 
-import caseStudy2.menu.clazz.Motel;
+import caseStudy2.menu.model.Motel;
 import caseStudy2.menu.format.ReadWrite;
 
 import java.util.ArrayList;

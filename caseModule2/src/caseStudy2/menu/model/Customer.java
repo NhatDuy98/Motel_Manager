@@ -1,4 +1,4 @@
-package caseStudy2.menu.clazz;
+package caseStudy2.menu.model;
 
 
 import caseStudy2.menu.admin.customerService.listOfCustomer.ListOfCustomer;
